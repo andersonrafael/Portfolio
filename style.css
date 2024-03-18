@@ -1,0 +1,158 @@
+@import url('httpx://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=wrap');
+
+:root {
+    --bg-color: #081b29;
+    --second-bg-color: #112e42;
+    --text-color: #ededed;
+    --main-color: #00abf0;
+}
+
+html {
+    font-size: 62.5%;
+    overflow: hidden;
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 2.5rem;
+    color: var(--text-color);
+    font-weight: 600;
+}
+
+.navBar a {
+    font-size: 1.7rem;
+    color: var(--text-color);
+    font-weight: 500;
+    margin-left: 3.5rem;
+    transition: 0.3s;
+}
+
+.navBar a:hover,
+.navBar a.active {
+    color: var(--main-color);
+}
+
+#menu-icon {
+    font-size: 3.6rem;
+    color: var(--text-color);
+    cursor: pointer;
+    display: none;
+}
+
+section {
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    padding: 0 9%;
+}
+
+.home_content {
+    max-width: 60rem;
+}
+
+.home_content h1 {
+    font-size: 4.2rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.home_content .text_animate {
+    position: relative;
+    width: 32.8rem;
+}
+
+.home_content .text_animate h3 {
+    font-size: 3.2rem;
+    font-weight: 700;
+    color: transparent;
+    -webkit-text-stroke: 0.7px var(--main-color);
+}
+
+.home_content p {
+    font-size: 1.6rem;
+    margin: 2rem 0 4rem;
+    letter-spacing: 0.1rem;
+}
+
+.btn_box {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 34.5rem;
+    height: 5rem;
+
+
+
+}
+
+.btn_box .btn {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 15rem;
+    height: 100%;
+    background: var(--main-color);
+    border-radius: 0.8rem;
+    border: .2rem solid var(--main-color);
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+    color: var(--bg-color);
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.btn_box .btn:hover {
+    color: var(--main-color);
+}
+
+.btn_box .btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: var(--bg-color);
+    z-index: -1;
+    transition: .5s;
+}
+
+.btn_box .btn:nth-child(2) {
+    background: transparent;
+    color: var(--main-color);
+}
+
+.btn_box .btn:nth-child(2):hover {
+    color: var(--bg-color);
+}
+
+.btn_box .btn:nth-child(2)::before {
+    background: var(--main-color);
+}
+
+.btn_box .btn:hover::before {
+    width: 100%;
+}
