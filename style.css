@@ -133,7 +133,7 @@ section {
     height: 100%;
     background: var(--bg-color);
     z-index: -1;
-    transition: .0, 5s;
+    transition: .5s;
 }
 
 .btn_box .btn:hover {
@@ -194,7 +194,7 @@ section {
     height: 100%;
     background: var(--main-color);
     z-index: -1;
-    transition: .0, 5s;
+    transition: .5s;
 }
 
 .home_sci a:hover::before {
