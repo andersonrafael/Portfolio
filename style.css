@@ -121,7 +121,7 @@ section {
     color: var(--bg-color);
     z-index: 1;
     overflow: hidden;
-    transition: .0, 5s;
+    transition: .5s;
 }
 
 .btn_box .btn::before {
