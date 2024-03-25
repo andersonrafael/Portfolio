@@ -64,9 +64,12 @@ section {
     display: flex;
     align-items: center;
     padding: 0 9%;
+<<<<<<< HEAD
     background: url('/assets/home.jpg') no-repeat;
     background-size: cover;
     background-position: center;
+=======
+>>>>>>> 87807754844f6b7311bb211ee20b6445ca09f4f3
 }
 
 .home_content {
@@ -74,7 +77,11 @@ section {
 }
 
 .home_content h1 {
+<<<<<<< HEAD
     font-size: 4.2rem;
+=======
+    font-size: 4.6rem;
+>>>>>>> 87807754844f6b7311bb211ee20b6445ca09f4f3
     font-weight: 700;
     line-height: 1.3;
 }
@@ -122,6 +129,7 @@ section {
     font-weight: 700;
     letter-spacing: 0.1rem;
     color: var(--bg-color);
+<<<<<<< HEAD
     z-index: 1;
     overflow: hidden;
     transition: .5s;
@@ -202,4 +210,6 @@ section {
 
 .home_sci a:hover::before {
     width: 100%;
+=======
+>>>>>>> 87807754844f6b7311bb211ee20b6445ca09f4f3
 }
