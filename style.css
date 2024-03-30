@@ -64,9 +64,12 @@ section {
     display: flex;
     align-items: center;
     padding: 0 9%;
-    /*background: url('/assets/home.jpg') no-repeat;
-    background-size: cover;
-    background-position: center;*/
+    background: url('/assets/portfolio.png') no-repeat;
+    background-size: 450px;
+    background-position: right;
+    margin-right: 150px;
+
+
 }
 
 .home_content {
@@ -167,7 +170,7 @@ section {
 
 .home_sci {
     position: absolute;
-    bottom: 1 rem;
+    bottom: 1rem;
     width: 200px;
     display: flex;
     justify-content: space-between;
