@@ -41,7 +41,7 @@ body {
     color: var(--text-color);
     font-weight: 500;
     margin-left: 3.5rem;
-    transition: 0.3s;
+    transition: 1.3s;
 }
 
 .navBar a:hover,
@@ -136,7 +136,7 @@ section {
     height: 100%;
     background: var(--bg-color);
     z-index: -1;
-    transition: .5s;
+    transition: 1.5s;
 }
 
 .btn_box .btn:hover {
