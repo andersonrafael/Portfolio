@@ -41,10 +41,10 @@ body {
 }
 
 .navBar a {
-    font-size: 2.0rem;
+    font-size: 2.2rem;
     color: var(--text-color);
-    font-weight: 500;
-    margin-left: 3.5rem;
+    font-weight: 450;
+    margin-left: 2.5rem;
     transition: 1.3s;
 }
 
@@ -96,6 +96,7 @@ section {
     font-size: 3.2rem;
     font-weight: 700;
     color: transparent;
+
     -webkit-text-stroke: 0.7px var(--main-color);
 }
 
@@ -104,6 +105,10 @@ section {
     margin: 2rem 0 4rem;
     letter-spacing: 0.1rem;
 }
+
+
+
+
 
 .btn_box {
     position: relative;
