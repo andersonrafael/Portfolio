@@ -314,7 +314,7 @@ span {
     align-items: center;
     flex-direction: column;
     min-height: auto;
-    padding-bottom: 5rem;
+    padding-bottom: 15rem;
 
 }
 
@@ -330,7 +330,7 @@ span {
 
 .education_colunm .title {
     font-size: 2.5rem;
-    margin: 0 0 1.5rem 2rem;
+    margin: 3rem 0 2.5rem 2rem;
 }
 
 .education_colunm .education_box {
