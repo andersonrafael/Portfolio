@@ -41,10 +41,10 @@ body {
 }
 
 .navBar a {
-    font-size: 2.2rem;
+    font-size: 2.0rem;
     color: var(--text-color);
-    font-weight: 450;
-    margin-left: 2.5rem;
+    font-weight: 500;
+    margin-left: 3.5rem;
     transition: 1.3s;
 }
 
@@ -96,7 +96,6 @@ section {
     font-size: 3.2rem;
     font-weight: 700;
     color: transparent;
-
     -webkit-text-stroke: 0.7px var(--main-color);
 }
 
@@ -105,10 +104,6 @@ section {
     margin: 2rem 0 4rem;
     letter-spacing: 0.1rem;
 }
-
-
-
-
 
 .btn_box {
     position: relative;
@@ -314,7 +309,7 @@ span {
     align-items: center;
     flex-direction: column;
     min-height: auto;
-    padding-bottom: 15rem;
+    padding-bottom: 5rem;
 
 }
 
@@ -330,7 +325,7 @@ span {
 
 .education_colunm .title {
     font-size: 2.5rem;
-    margin: 3rem 0 2.5rem 2rem;
+    margin: 4rem 0 1.5rem 2rem;
 }
 
 .education_colunm .education_box {
@@ -398,4 +393,27 @@ span {
 .education_content .content p {
     font-size: 1.3rem;
     margin-top: .6rem;
+}
+
+/*Skills/Experiência Professional*/
+
+.skills {
+    min-height: auto;
+    padding-bottom: 7rem;
+    background: var(--second-bg-color);
+}
+
+.skills .skills-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+}
+
+.skills-row .skills-column {
+    flex: 1 1 40rem;
+}
+
+.skills-column .title {
+    font-size: 2.5rem;
+    margin: 4rem 0 1.5rem;
 }
