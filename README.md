@@ -4,7 +4,7 @@ Olá! Que alegria ter você por aqui! ✨
 
 Este é o repositório do meu portfólio pessoal, um projeto que desenvolvi para apresentar minha jornada, habilidades e projetos como Desenvolvedor Frontend. Foi criado com muito cuidado para oferecer uma experiência de usuário agradável e intuitiva, refletindo minha paixão por criar interfaces memoráveis.
 
-Clique aqui para ver o projeto ao vivo! (Não se esqueça de adicionar o link do seu site aqui!)
+Clique aqui para ver o projeto ao vivo! https://andersonrafael.github.io/Portfolio/
 
 🚀 Funcionalidades Principais
 O site está organizado em várias seções para facilitar a navegação:
