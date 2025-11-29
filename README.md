@@ -61,3 +61,4 @@ LinkedIn: (https://www.linkedin.com/in/anderson-rafael-log/)
 GitHub: https://github.com/andersonrafael
 
 Todos os direitos resevardos a Anderson Rafael.
+editado
