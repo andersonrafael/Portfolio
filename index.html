@@ -1,323 +1,212 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Anderson Rafael — Frontend Developer</title>
+    <meta name="description"
+        content="Portfólio profissional de Anderson Rafael, Desenvolvedor Frontend. Projetos, skills, contato e interface moderna." />
 
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:wght@400;500;700&family=Titillium+Web:wght@400;900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="reset.css">
-    <script type="module" src="script.js "></script>
+    <!-- Icons -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
 
-    <!--box incons-->
-    <link rel="shortcut icon" href="/assets/favicon.png" type="image/x-icon">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Favicon -->
+    <link rel="icon" href="/assets/favicon.png" />
 
-
-
-
+    <!-- Arquivo CSS externo -->
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
 
-    <!--header design-->
+    <!-- HEADER -->
+    <header class="header" role="banner">
+        <div class="nav-wrap">
+            <a class="logo" href="#home">Anderson.dev</a>
+            <nav class="navbar" role="navigation" aria-label="Main Navigation">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">Sobre</a>
+                <a href="#projects" class="nav-link">Projetos</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#contact" class="nav-link">Contato</a>
+            </nav>
 
-    <header class="header">
-        <a href="#" class="logo">Anderson.</a>
-        <div class="bx bx-menu" id="menu-icon"></div>
-        <nav class="navbar">
-            <a href="#home" class="active">Home</a>
-            <a href="#about">Sobre</a>
-            <a href="#education">Education</a>
-            <a href="#skills">Skils</a>
-            <a href="#contact">Contact</a>
-        </nav>
+            <div style="display:flex;gap:.5rem;align-items:center">
+                <button id="themeToggle" class="menu-toggle"><i class='bx bx-moon'></i></button>
+                <button id="mobileMenuBtn" class="menu-toggle" aria-expanded="false"><i class='bx bx-menu'></i></button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobileNav" style="display:none;background:var(--card);padding:1rem;border-top:1px solid var(--glass);">
+            <nav style="display:flex;flex-direction:column;gap:.25rem">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">Sobre</a>
+                <a href="#projects" class="nav-link">Projetos</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#contact" class="nav-link">Contato</a>
+            </nav>
+        </div>
     </header>
 
-    <!--home section design-->
 
-    <section class="home" id="home">
-        <div class="home_content">
-            <h1>Olá, eu sou<span> <br>Anderson Rafael </span></h1>
+    <!-- MAIN CONTENT -->
+    <main class="container">
 
-            <div class="text_animate">
-                <h3>Frontend Developer</h3>
-            </div>
+        <!-- HERO -->
+        <section id="home" class="hero">
+            <div>
+                <h1>Olá, eu sou <span class="role">Anderson Rafael</span></h1>
+                <p class="lead">Desenvolvedor Frontend especializado em interfaces modernas, responsivas e acessíveis.
+                    Trabalho com React, TypeScript, Tailwind e foco em boas práticas.</p>
 
-            <p>Desenvolvedor Front-end apaixonado por criar interfaces intuitivas e experiências de usuário memoráveis.
-                Com um forte
-                portfólio de projetos pessoais, demonstro proficiência em HTML, CSS e JavaScript. Sou autodidata e
-                possuo grande
-                capacidade de aprendizado, sempre buscando aprimorar minhas habilidades e acompanhar as últimas
-                tendências do mercado.
-            </p>
-
-            <div class="btn_box">
-                <a href="#" class="btn">Hire Me</a>
-                <a href="#" class="btn">Let's Talk</a>
-            </div>
-        </div>
-        <div class="home_sci">
-            <a href="#"><i class='bx bxl-linkedin'></i></a>
-            <a href="#"><i class='bx bxl-github'></i></a>
-            <a href="#"><i class='bx bxl-whatsapp'></i></a>
-        </div>
-
-        <div class="home_imgHover"></div>
-    </section>
-
-    <!-- about section design-->
-
-    <section class="about" id="about">
-        <h2 class="heading"> About <span> Me </span></h2>
-
-        <div class="about_img">
-            <img src="https://i.postimg.cc/cCjfDhz2/portfolio.png" alt="">
-            <span class="circle_spin"></span>
-        </div>
-
-        <div class="about_content">
-            <h3>Frontend Developer!</h3>
-            <p>Desenvolvedor Front-end com paixão por criar interfaces intuitivas e experiências de usuário memoráveis.
-                Possuo sólida
-                experiência em HTML, CSS, JavaScript e TypeScript, com proficiência em frameworks como React e
-                bibliotecas como
-                Bootstrap e Tailwind CSS. Meu portfólio inclui diversos projetos, desde sites para hamburguerias e
-                cafeterias até
-                portfólios pessoais, demonstrando minha capacidade de adaptar minhas habilidades a diferentes
-                necessidades sempre buscando a melhor experiência do usuário.</p>
-
-            <div class="btn_box btns">
-                <a href="#" class="btn">Read More</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Education section desing -->
-
-    <section class="education" id="education">
-        <h2 class="heading">My <span>Journey</span></h2>
-
-        <div class="education_row">
-            <div class="education_colunm">
-                <h3 class="title">Education</h3>
-
-                <div class="education_box">
-
-                    <div class="education_content">
-                        <div class="content">
-                            <div class="year"><i class="bx bxs-calendar"> 2016 - 2025</i></div>
-                            <h3>Analise e Desenvolvimento de Sistemas - Estacio de Sá</h3>
-                            <p>Analisar e projetar sistemas: Compreender as necessidades dos usuários e traduzi-las em
-                                soluções tecnológicas
-                                eficientes.</p>
-                        </div>
-                    </div>
-
-                    <div class="education_content">
-                        <div class="content">
-                            <div class="year"><i class="bx bxs-calendar"> 2024 - 2025</i></div>
-                            <h3>Sistemas Embarcados - IFCE - Instituno Federal do Ceará</h3>
-                            <p>Automação: Simplificam tarefas complexas e repetitivas, aumentando a eficiência e a
-                                produtividade em diversos setores.</p>
-
-                        </div>
-                    </div>
-
-                    <div class="education_content">
-                        <div class="content">
-                            <div class="year"><i class="bx bxs-calendar"> 2016 - 2025</i></div>
-                            <h3>Mecatrônica - CEPEP</h3>
-                            <p>Combina conhecimentos de mecânica, eletrônica e ciência da computação para projetar,
-                                desenvolver e controlar sistemas
-                                automatizados. Em outras palavras, é a engenharia que une o mundo físico (máquinas) com
-                                o mundo digital (softwares e
-                                controles)..</p>
-
-                        </div>
-                    </div>
-
+                <div class="cta">
+                    <a class="btn" href="#projects">Ver Projetos</a>
+                    <a class="btn btn_outline" href="#contact">Contato</a>
                 </div>
-            </div>
 
-            <!-- Experiência section desing -->
-
-            <div class="education_colunm">
-                <h3 class="title">Experience</h3>
-
-                <div class="education_box">
-
-                    <div class="education_content">
-                        <div class="content">
-                            <div class="year"><i class="bx bxs-calendar"> 2023 - 2025</i></div>
-                            <h3>Sistema Para uma Hamburgueria</h3>
-                            <p>Desenvolvi um sistema completo para gerenciar os pedidos de uma hamburgueria, otimizando
-                                o atendimento e a gestão do
-                                negócio. O sistema permite aos clientes realizar pedidos de forma rápida e intuitiva,
-                                seja pelo site ou por aplicativo
-                                mobile. Na cozinha, os pedidos são organizados de forma eficiente, garantindo a entrega
-                                rápida e precisa dos produtos.</p>
-                        </div>
-                    </div>
-
-                    <div class="education_content">
-                        <div class="content">
-                            <div class="year"><i class="bx bxs-calendar"> 2023 - 2025</i></div>
-                            <h3>Sistema Para cafeterias</h3>
-                            <p>Desenvolvi um site completo para uma cafeteria, oferecendo uma experiência de compra
-                                online intuitiva e personalizada.
-                                Os clientes podem se cadastrar, navegar por um menu detalhado, personalizar seus pedidos
-                                e realizar pagamentos com
-                                segurança.</p>
-
-                        </div>
-                    </div>
-
-                    <div class="education_content">
-                        <div class="content">
-                            <div class="year"><i class="bx bxs-calendar"> 2020 - 2025</i></div>
-                            <h3>Hotel Paraiso</h3>
-                            <p>O site serve como um catálogo online do hotel, permitindo que os potenciais hóspedes
-                                conheçam
-                                o estabelecimento, seus
-                                serviços e façam reservas de forma rápida e fácil. Além disso, a plataforma pode ser
-                                utilizada como uma ferramenta de
-                                marketing digital para atrair novos clientes e fidelizar os existentes.</p>
-
-                        </div>
+                <div class="skills-inline" style="margin-top:1rem">
+                    <small class="muted">Stack principal:</small>
+                    <div style="display:flex;gap:.5rem;margin-top:.4rem;flex-wrap:wrap">
+                        <span class="tag">React</span>
+                        <span class="tag">TypeScript</span>
+                        <span class="tag">Tailwind</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">Git</span>
                     </div>
                 </div>
             </div>
 
-        </div>
-
-    </section>
-
-    <!--skills section desing-->
-
-    <section class="skills" id="skills">
-
-        <h2 class="heading">My <span>Skills</span></h2>
-
-        <div class="skills-row">
-            <div class="skills-column">
-                <h3 class="title">Coding Skills</h3>
-
-                <div class="skills-box">
-                    <div class="skills-content">
-                        <div class="progress">
-                            <h3>HTML <span>90%</span></h3>
-                            <div class="bar"><span></span></div>
+            <aside class="hero-card fadeUp">
+                <div style="display:flex;flex-direction:column;gap:.75rem">
+                    <div style="display:flex;align-items:center;gap:.75rem">
+                        <div
+                            style="width:56px;height:56px;border-radius:10px;background:linear-gradient(180deg,var(--accent),#2ad0ff)">
                         </div>
-
-                        <div class="progress">
-                            <h3>CSS <span>92%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
-
-                        <div class="progress">
-                            <h3>JavaScript <span>75%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
-
-                        <div class="progress">
-                            <h3>Python <span>75%</span></h3>
-                            <div class="bar"><span></span></div>
+                        <div>
+                            <strong style="color:#fff">Anderson Rafael</strong>
+                            <div class="muted">Frontend Developer</div>
                         </div>
                     </div>
-                </div>
-            </div>
 
-            <div class="skills-column">
-                <h3 class="title">Professional Skills</h3>
-                <div class="skills-box">
-                    <div class="skills-content">
+                    <div>
+                        <div style="font-weight:700;margin-bottom:.25rem;color:#fff">Contato</div>
+                        <div class="muted">email@example.com</div>
+                        <div class="muted">(00) 9 0000-0000</div>
+                    </div>
 
-                        <div class="progress">
-                            <h3>Dev web <span>95%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
-
-                        <div class="progress">
-                            <h3>Desing Graphic <span>85%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
-
-                        <div class="progress">
-                            <h3>SEO OLP <span>78%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
-
-                        <div class="progress">
-                            <h3>Dev Frontend <span>92%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
+                    <div class="socials">
+                        <a href="#"><i class='bx bxl-linkedin'></i></a>
+                        <a href="#"><i class='bx bxl-github'></i></a>
+                        <a href="#"><i class='bx bxl-whatsapp'></i></a>
                     </div>
                 </div>
+            </aside>
+        </section>
+
+
+        <!-- ABOUT -->
+        <section id="about" class="about fadeUp">
+            <div class="photo">
+                <img src="https://i.postimg.cc/cCjfDhz2/portfolio.png" alt="Foto do desenvolvedor" />
             </div>
 
-        </div>
-    </section>
+            <div>
+                <h3>Sobre mim</h3>
+                <p class="muted">Sou um desenvolvedor front-end focado na criação de interfaces modernas, acessíveis e
+                    escaláveis. Tenho experiência com SPA, design systems, UX e metodologias ágeis.</p>
 
-    <!--skills section desing-->
+                <ul class="muted" style="margin-top:1rem;line-height:1.8">
+                    <li>Experiência com React, TypeScript, Tailwind, APIs REST;</li>
+                    <li>Código limpo, componentização e boas práticas;</li>
+                    <li>Design responsivo e usabilidade avançada.</li>
+                </ul>
+            </div>
+        </section>
 
-    <section class="contact" id="contact">
-        <h2 class="heading">Contact <span>Me!</span></h2>
 
-        <form action="#">
-            <div class="input-box">
-                <div class="input-field">
-                    <input type="text" placeholder="Full Name" required>
-                    <span class="focus"></span>
+        <!-- PROJECTS -->
+        <section id="projects" class="fadeUp">
+            <h2 style="color:#fff;margin-bottom:.5rem">Projetos</h2>
+            <p class="muted">Alguns dos meus projetos mais relevantes.</p>
+
+            <div id="projectsGrid" class="projects-grid"></div>
+        </section>
+
+
+        <!-- SKILLS -->
+        <section id="skills" class="fadeUp">
+            <h2 style="color:#fff">Skills</h2>
+            <div class="skills">
+
+                <div>
+                    <div class="skill-item">
+                        <div class="skill-name"><span>HTML/CSS</span><span>95%</span></div>
+                        <div class="progress" data-percent="95"><span></span></div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-name"><span>JavaScript</span><span>82%</span></div>
+                        <div class="progress" data-percent="82"><span></span></div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-name"><span>React/TS</span><span>85%</span></div>
+                        <div class="progress" data-percent="85"><span></span></div>
+                    </div>
                 </div>
-                <div class="input-field">
-                    <input type="text" placeholder="Email Address" required>
-                    <span class="focus"></span>
+
+                <div>
+                    <div class="skill-item">
+                        <div class="skill-name"><span>UI/UX</span><span>80%</span></div>
+                        <div class="progress" data-percent="80"><span></span></div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-name"><span>Performance</span><span>78%</span></div>
+                        <div class="progress" data-percent="78"><span></span></div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-name"><span>DevOps</span><span>65%</span></div>
+                        <div class="progress" data-percent="65"><span></span></div>
+                    </div>
                 </div>
+
             </div>
+        </section>
 
-            <div class="input-box">
-                <div class="input-field">
-                    <input type="number" placeholder="Mobile Number" required>
-                    <span class="focus"></span>
-                </div>
-                <div class="input-field">
-                    <input type="text" placeholder="Email Subject" required>
-                    <span class="focus"></span>
-                </div>
-            </div>
 
-            <div class="textarea-field">
-                <textarea name="" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
-                <span class="focus"></span>
-            </div>
+        <!-- CONTACT -->
+        <section id="contact" class="fadeUp">
+            <h2 style="color:#fff">Contato</h2>
+            <p class="muted">Entre em contato ou envie um email diretamente.</p>
 
-            <div class="btn_box btns">
-                <button type="submit" class="btn">Submit</button>
-            </div>
+            <form id="contactForm" class="contact-form">
+                <input name="name" placeholder="Seu nome" required />
+                <input type="email" name="email" placeholder="Seu e-mail" required />
+                <textarea name="message" placeholder="Sua mensagem" required></textarea>
+                <button class="btn" type="submit">Enviar Mensagem</button>
+            </form>
+        </section>
 
-        </form>
-    </section>
 
-    <!--footer desing-->
+        <!-- FOOTER -->
+        <footer class="footer">
+            <div>© 2025 Anderson Rafael — Frontend Developer</div>
+            <a href="#home" class="muted"><i class='bx bx-up-arrow-alt'></i></a>
+        </footer>
 
-    <footer class="footer">
-        <div class="footer-text">
-            <p>Copyright &copy; 2025 by .Anderson | .All Right Reserved.</p>
-        </div>
-        <div class="footer-iconTop">
-            <a href="#"><i class="bx bx-up-arrow-alt"></i></a>
-        </div>
+    </main>
 
-    </footer>
+    <!-- JS EXTERNO -->
+    <script src="script.js"></script>
 </body>
-
 
 </html>
